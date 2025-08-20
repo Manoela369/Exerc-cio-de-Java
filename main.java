@@ -1,13 +1,16 @@
-public class Main{
-    public static void main (String [] args){
-        String nomeFilme = "Star Wars: o Império contra ataca";
-        String sinopse = "Filme de ficção científica";
-        int notaFilme = 10;
-
-        System.out.printl("""
-                Nome do Filme: %s
-                Sinopse: %s
-                Nota do filme: %d
-                """.fomatted (nomeFilme,sinopse,notaFilme));
-    }
+import java.util.Scanner
+public class SistemaBancario{
+public static void main (String [] args){
+  int escolha = 0;
+  System.out.println("""
+  Operações
+  (1)Consultar Saldo
+  (2)Realizar depósito
+  (3)Realizar saque 
+  (4)Sair
+  """);
+  System.out.println("Qual sua opção?");
+  Scanner opcao = new Scanner(System.in);
+  escolha = opcao.nextInt();
+}
 }
